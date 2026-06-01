@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-    baseURL: 'https://api.coingecko.com/api/v3',
+    baseURL: import.meta.env.VITE_COINGECKO_API_URL,
 });
 
 //Fetch top 50 trending coins by market cap
